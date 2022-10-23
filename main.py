@@ -1,5 +1,4 @@
-print("Hi")
-print("Привет")
+import random
 
-print("bye")
-print("Пока")
+def game(choice, result):
+ computer_choice = random.choice("rps")
