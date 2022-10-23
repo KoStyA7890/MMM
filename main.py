@@ -28,3 +28,27 @@ if str.lower(choice) == computer_choice:
  elif str.lower(choice) == "p" and computer_choice == "s":
  result["computer"] += 1
  print("------Computer Wins------")
+ print("Score,Computer", result
+ ["computer"], "—", result["player"],
+       "Player")
+ elif str.lower(choice) == "p" and computer_choice == "r":
+result["player"] += 1
+print("------Player Wins------")
+print("Score,Computer", result
+["computer"], "—", result["player"],
+      "Player")
+elif str.lower(choice) == "s" and computer_choice == "r":
+result["computer"] += 1
+print("------Computer Wins------")
+print("Score,Computer", result
+["computer"], "—", result["player"],
+      "Player")
+elif str.lower(choice) == "s" and computer_choice == "p":
+result["player"] += 1
+print("------Player Wins------")
+print("Score,Computer", result
+["computer"], "—", result["player"],
+      "Player")
+result = {"computer": 0, "player": 0}
+choise = input("Select R / P / S – ")
+game(choice=choise, result=result)
